@@ -1,0 +1,40 @@
+{
+  "name": "ericktec",
+  "version": "0.0.1",
+  "description": "Personal web page where I describe myself",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericktec/ericktec.git"
+  },
+  "keywords": [
+    "Personal",
+    "web",
+    "page"
+  ],
+  "author": "Erick David Mendoza Velasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericktec/ericktec/issues"
+  },
+  "homepage": "https://github.com/ericktec/ericktec#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
