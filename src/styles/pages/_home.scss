@@ -1,0 +1,88 @@
+.header {
+  position: relative;
+  background-color: $color-gray-dark;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10rem;
+  overflow: hidden;
+
+  &__text-container {
+    line-height: 1;
+    color: #fff;
+    font-size: 10vmin;
+    width: 80%;
+    margin: auto;
+  }
+
+
+  &__text {
+
+    &--1,
+    &--2,
+    &--3 {
+      display: block;
+    }
+
+    &--1 {
+      animation: left-to-right .5s ease-in-out;
+    }
+
+    &--2 {
+      animation: left-to-right .5s .5s ease-in-out backwards;
+    }
+
+    &--3 {
+      animation: left-to-right .5s 1s ease-in-out backwards;
+      color: #3e60d1;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    animation: right-to-left .5s ease-in-out 1.5s backwards;
+  }
+}
+
+.education {
+  font-size: 1.6rem;
+  padding: 10rem 0;
+  
+  &__item {
+    box-shadow: 0 1rem 2rem rgba($color-gray-dark, .7);
+    position: relative;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__description {
+    margin-top: 2.5rem;
+  }
+
+  &__subheading {
+    font-size: 2.1rem;
+  }
+
+  &__name,
+  &__GPA {
+    font-size: 2rem;
+  }
+
+  &__date {
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+    color: $color-gray-light;
+  }
+
+  &__img {
+    width: 100%;
+    background-size: cover;
+    display: block;
+  }
+}

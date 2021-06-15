@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ericktec</title>
-</head>
-<body>
-  <img src="./img/GPA.PNG" alt="">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ericktec</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        name="navigation__checkbox"
+        class="navigation__checkbox"
+        id="navigation__checkbox"
+      />
+      <label for="navigation__checkbox" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <nav class="navigation__background" id="navigation__background">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About me</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Education</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Skills</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__text-container">
+        <h1 class="header__text">
+          <span class="header__text--1">Hello</span>
+          <span class="header__text--2">I am</span>
+          <span class="header__text--3">Erick</span>
+        </h1>
+      </div>
+
+      <img class="header__img" src="./img/head-img.PNG" alt="erick's photo" />
+    </header>
+
+    <section class="education">
+      <h3 class="education__heading">Education</h3>
+
+      <div class="row education__item">
+        <div class="col-1-of-2">
+          <img
+            src="./img/working-laptop.JPG"
+            alt="Laptop"
+            class="education__img"
+          />
+        </div>
+        <div class="col-1-of-2">
+          <div class="education__description">
+            <h4 class="education__subheading">
+              Tecnológico de Monterrey <br> Campus Guadalajara
+            </h4>
+            <p class="education__name">Computer Systems Engineer (ISC-11)</p>
+            <p class="education__GPA">GPA 94 / 100</p>
+          </div>
+          <p class="education__date">2017 - now</p>
+        </div>
+      </div>
+
+    </section>
+  </body>
 </html>

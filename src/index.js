@@ -1,4 +1,6 @@
-import printName from "./scripts/test";
+import navigationMenu from './scripts/menu';
+
+//styles
 import './styles/main.scss';
 
-printName();
+navigationMenu();
