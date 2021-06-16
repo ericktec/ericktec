@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Personal web page where I describe myself",
   "main": "index.js",
+  "browserslist": [
+    "defaults",
+    "ie > 9"
+  ],
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack serve --mode=development"
@@ -25,12 +29,15 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.5",
+    "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
+    "postcss": "^8.3.4",
+    "postcss-loader": "^6.1.0",
     "sass": "^1.34.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^2.0.0",

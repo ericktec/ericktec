@@ -1,0 +1,20 @@
+.img-card {
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+  transition: all .2s ease-in;
+
+  &__icon {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3rem 2rem rgba($color-gray-dark, .3);
+  }
+}
