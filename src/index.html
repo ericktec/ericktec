@@ -23,13 +23,13 @@
             <a href="#" class="navigation__link">About me</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Education</a>
+            <a href="#education" class="navigation__link">Education</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Projects</a>
+            <a href="#tech-skills" class="navigation__link">Skills</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Skills</a>
+            <a href="#projects" class="navigation__link">Projects</a>
           </li>
         </ul>
       </nav>
@@ -47,43 +47,43 @@
       <img class="header__img" src="./img/head-img.PNG" alt="erick's photo" />
     </header>
 
-    <section class="education">
+    <section class="education" id="education">
       <h2 class="heading-secondary">Education</h2>
 
-      <div class="row education__item">
+      <div class="row alternate__item">
         <div class="col-1-of-2">
           <img
             src="./img/working-laptop.JPG"
             alt="Laptop"
-            class="education__img"
+            class="alternate__img"
           />
         </div>
         <div class="col-1-of-2">
-          <div class="education__description">
-            <h4 class="education__subheading">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">
               Tecnológico de Monterrey <br />
               Campus Guadalajara
             </h4>
-            <p class="education__name">Computer Systems Engineer (ISC-11)</p>
+            <p class="altername__name">Computer Systems Engineer (ISC-11)</p>
             <p class="education__GPA">GPA 94 / 100</p>
           </div>
-          <p class="education__date education__date--right">
+          <p class="alternate__date alternate__date--right">
             Since: 2017 - present
           </p>
         </div>
       </div>
 
-      <div class="row education__item">
+      <div class="row alternate__item">
         <div class="col-1-of-2">
-          <div class="education__description">
-            <h4 class="education__subheading">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">
               Tecnológico de Monterrey <br />
               Campus Guadalajara
             </h4>
-            <p class="education__name">Computer Systems Engineer (ISC-11)</p>
+            <p class="alternate__name">Computer Systems Engineer (ISC-11)</p>
             <p class="education__GPA">GPA 94 / 100</p>
           </div>
-          <p class="education__date education__date--left">
+          <p class="alternate__date alternate__date--left">
             Since: 2017 - present
           </p>
         </div>
@@ -92,13 +92,13 @@
           <img
             src="./img/working-laptop.JPG"
             alt="Laptop"
-            class="education__img"
+            class="alternate__img"
           />
         </div>
       </div>
     </section>
 
-    <section class="tech-skills">
+    <section class="tech-skills" id="tech-skills">
       <h2 class="heading-secondary">Technical Skills</h2>
       <!-- First row of 4 columns -->
       <div class="row">
@@ -239,9 +239,117 @@
             <h3 class="img-card__title">Next.js</h3>
           </div>
         </div>
-    
-        
       </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading-secondary">Projects</h2>
+      <!-- First row -->
+      <div class="row alternate__item">
+        <div class="col-1-of-2">
+          <figure class="figure">
+            <img
+              src="./img/usuma.PNG"
+              alt="Code sample project"
+              class="alternate__img"
+            />
+            <figcaption class="figure__caption">
+              <p>Visit me</p>
+              <a
+                class="btn btn-blue"
+                href="https://www.usumamexico.org/"
+                target="__blank"
+                >Button</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-1-of-2">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">USUMA</h4>
+            <p class="altername__name">
+              Usuma a non-profit organization whose main objective is to support
+              low-income mexican students to continue with their studies through
+              donations.
+            </p>
+          </div>
+          <p class="alternate__date alternate__date--right">
+            Since: June 2020 to November 2020
+          </p>
+        </div>
+      </div>
+      <!-- Second row -->
+      <div class="row alternate__item">
+        <div class="col-1-of-2">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">Code-sampler</h4>
+            <p class="altername__name">
+              This project consists of a web page that let you upload markdown
+              files and in base of those a new static page is created for each
+              md file with the styles applied already so developers that want to
+              create documentation about certain technology only have to think
+              about the content and forget about the design. This project was
+              the first prototype for the Oracle's DB tools team documentation
+              page.
+            </p>
+          </div>
+          <p class="alternate__date alternate__date--left">
+            Since: February 2021 - June 2021
+          </p>
+        </div>
+
+        <div class="col-1-of-2">
+          <figure class="figure">
+            <img
+              src="./img/code-sample.PNG"
+              alt="Code sample project"
+              class="alternate__img"
+            />
+            <figcaption class="figure__caption">
+              <p>Visit me</p>
+              <a
+                class="btn btn-blue"
+                href="https://mig8447.github.io/code-sampler"
+                target="__blank"
+                >Button</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="heading-secondary">Contact me!</h2>
+
+      <form class="row" id="contact" method="POST" action="https://formspree.io/f/xeqvkrkv">
+        <div class="contact__form">
+          <input type="text" class="form__input" name="first-name" id="first-name" placeholder="First name" required />
+          <input type="text" class="form__input" name="last-name" id="last-name" placeholder="Last name" required />
+  
+          <input
+            type="email"
+            class="form__input"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+  
+          <textarea
+          class="form__text-area"
+            name="message"
+            id="message"
+            maxlength="200"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+  
+          <p class="form__status" id="form-status" ></p>
+          <button type="submit" class="btn btn-blue">Send</button>
+        </form>
+
+        </div>
     </section>
   </body>
 </html>

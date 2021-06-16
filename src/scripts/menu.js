@@ -9,6 +9,12 @@ const navigationMenu = () => {
       menu.checked = false;
       menu.dispatchEvent(new Event("change", {"bubbles": true}));
     }
+    if(e.target.href && menu.checked) {
+      menu.checked = false;
+      menu.dispatchEvent(new Event("change", {"bubbles": true}));
+      window.location.href = `${e.target.href}`;
+    }
+    
   });
 
   menu.addEventListener("change", () => {

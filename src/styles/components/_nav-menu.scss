@@ -81,7 +81,7 @@
       width: .5rem;
       transform: scale(0);
       background-color: $color-primary;
-      z-index: 1001;
+      z-index: 1000;
       transition: transform .2s ease-out,
                   width .2s .2s;
     }
@@ -96,6 +96,7 @@
   &__link {
     display: inline-block;
     position: relative;
+    z-index: 1001;
     &:link,
     &:visited {
       color: #fff;

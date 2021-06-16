@@ -50,48 +50,29 @@
   font-size: 1.6rem;
   padding: $padding-between-sections 0;
   
-  &__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  &__description {
-    width: fit-content;
-    margin: auto;
-  }
-
-  &__subheading {
-    font-size: 2.1rem;
-  }
-
-  &__name,
   &__GPA {
     font-size: 2rem;
   }
 
-  &__date {
-    position: absolute;
-    color: $color-gray-light;
-    bottom: 6%;
-
-    &--right {
-      right: 4%;
-    }
-
-    &--left {
-      left: 4%;
-    }
-  }
-
-  &__img {
-    width: 100%;
-    background-size: cover;
-    display: block;
-  }
 }
 
 .tech-skills {
   background-color: $color-gray-background;
   padding: $padding-between-sections 0;
+}
+
+.projects {
+  font-size: 1.6rem;
+  padding: $padding-between-sections 0;
+}
+
+.contact {
+  background-color: $color-gray-background;
+  padding: $padding-between-sections 0;
+
+  &__form {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
 }

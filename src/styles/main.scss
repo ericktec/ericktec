@@ -6,8 +6,13 @@
 @import "base/base";
 
 @import "layout/grid";
+@import "layout/alternate-sides";
 
+@import "components/buttons";
 @import "components/nav-menu";
 @import "components/img-card";
+@import "components/fig-caption";
+@import "components/form";
+
 
 @import "pages/home";

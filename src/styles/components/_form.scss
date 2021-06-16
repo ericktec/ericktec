@@ -1,0 +1,56 @@
+.form {
+  &__input,
+  &__text-area {
+    display: block;
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    border-radius: $border-radius;
+    width: 100%;
+    font-family: inherit;
+  }
+
+  &__text-area {
+    resize: vertical;
+    min-height: 20rem;
+  }
+
+  &__input:not(:last-child),
+  &__text-area:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    border-bottom: 5px solid transparent;
+    transition: all .2s;
+  }
+
+  &__input:focus {
+    outline: none;
+    border-bottom: 5px solid $color-blue-1;
+  }
+
+  &__input:focus:invalid {
+    border-bottom: 5px solid red;
+  }
+
+  &__status {
+    visibility: hidden;
+    border-radius: $border-radius;
+    padding: 1rem 2rem;
+    float: right;
+
+    &--success {
+      background-color: #54B689;
+      color: #fff;
+    }
+
+    &--fail {
+      background-color: red;
+      color: #fff;
+    }
+  }
+
+}

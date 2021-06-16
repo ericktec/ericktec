@@ -1,0 +1,41 @@
+.alternate {
+  
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__subheading {
+    font-size: 2.1rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+  }
+
+  &__description {
+    width: fit-content;
+    margin: auto;
+  }
+
+  &__img {
+    width: 100%;
+    background-size: cover;
+    display: block;
+  }
+
+  &__date {
+    position: absolute;
+    color: $color-gray-light;
+    bottom: 6%;
+
+    &--right {
+      right: 0;
+    }
+
+    &--left {
+      left: 0;
+    }
+  }
+}
