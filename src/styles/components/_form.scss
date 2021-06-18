@@ -15,6 +15,10 @@
   &__text-area {
     resize: vertical;
     min-height: 20rem;
+    
+    @include responsive(small) {
+      min-height: 10rem;
+    }
   }
 
   &__input:not(:last-child),
