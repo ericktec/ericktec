@@ -1,0 +1,28 @@
+.btn {
+  &,
+  &:visited,
+  &:link{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-size: inherit;
+    transition: all .2s;
+    font-family: inherit;
+  }
+  &,
+  &-blue:visited,
+  &-blue:link {
+    background-color: $color-primary;
+    color: white;
+  }
+
+  &,
+  &:link:hover,
+  &:visited:hover {
+    background-color: $color-blue-1;
+  }
+}

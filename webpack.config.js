@@ -23,11 +23,21 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use:[
+        use: [
           "style-loader",
           "css-loader",
+          "postcss-loader",
           "sass-loader"
         ]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|gif|)$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+          }
+        }]
       }
     ]
   },
@@ -38,7 +48,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename:"[id].css"
+      chunkFilename: "[id].css"
     })
   ]
 }

@@ -1,0 +1,32 @@
+.img-card {
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+  transition: all .2s ease-in;
+  @include responsive(medium) {
+    padding: 2rem 1rem;
+  }
+
+  &__icon {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+    @include responsive(medium) {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+  &__title {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3rem 2rem rgba($color-gray-dark, .3);
+    @include responsive(medium) {
+      transform: none;
+      box-shadow: none;
+    }
+
+  }
+}

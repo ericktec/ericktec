@@ -1,0 +1,124 @@
+.header {
+  position: relative;
+  background-color: $color-gray-dark;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  
+
+  &__text-container {
+    @include center;
+    line-height: 1;
+    color: #fff;
+    font-size: 10vmin;
+    width: 80%;
+    margin: auto;
+    @include responsive(medium) {
+      left: 43%;
+    }
+
+    @include responsive(small) {
+      font-size: 6rem;
+    }
+
+  }
+
+
+  &__text {
+
+    &--1,
+    &--2,
+    &--3 {
+      display: block;
+    }
+
+    &--1 {
+      animation: left-to-right .5s ease-in-out;
+    }
+
+    &--2 {
+      animation: left-to-right .5s .5s ease-in-out backwards;
+    }
+
+    &--3 {
+      animation: left-to-right .5s 1s ease-in-out backwards;
+      color: #3e60d1;
+    }
+
+  }
+
+  &__img {
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    animation: right-to-left .5s ease-in-out 1.5s backwards;
+
+    @include responsive(large) {
+      right: -8rem;
+    }
+
+    @include responsive(medium) {
+      right: -9rem;
+    }
+
+    @include responsive(smallest) {
+      height: 40%;
+      right: 25%;
+    }
+
+    
+  }
+}
+
+.education {
+  font-size: 1.6rem;
+  padding: $padding-between-sections;
+  
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
+  
+  &__GPA {
+
+  }
+
+  &__name {
+    font-size: 1.8rem;
+  }
+
+}
+
+.tech-skills {
+  background-color: $color-gray-background;
+  padding: $padding-between-sections;
+
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
+}
+
+.projects {
+  font-size: 1.6rem;
+  padding: $padding-between-sections;
+
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
+}
+
+.contact {
+  background-color: $color-gray-background;
+  padding: $padding-between-sections;
+
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
+
+  &__form {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+}

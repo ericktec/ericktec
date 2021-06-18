@@ -1,11 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ericktec</title>
-</head>
-<body>
-  <img src="./img/GPA.PNG" alt="">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ericktec</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        name="navigation__checkbox"
+        class="navigation__checkbox"
+        id="navigation__checkbox"
+      />
+      <label for="navigation__checkbox" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <nav class="navigation__background" id="navigation__background">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About me</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#education" class="navigation__link">Education</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#tech-skills" class="navigation__link">Skills</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__text-container">
+        <h1 class="header__text">
+          <span class="header__text--1">Hello</span>
+          <span class="header__text--2">I am</span>
+          <span class="header__text--3">Erick</span>
+        </h1>
+      </div>
+
+      <img class="header__img" src="./img/head-img.PNG" alt="erick's photo" />
+    </header>
+
+    <section class="education" id="education">
+      <h2 class="heading-secondary">Education</h2>
+
+      <div class="row alternate__item">
+        <div class="col-1-of-2">
+          <img
+            src="./img/working-laptop.JPG"
+            alt="Laptop"
+            class="alternate__img"
+          />
+        </div>
+        <div class="col-1-of-2">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">
+              Tecnológico de Monterrey Campus Guadalajara
+            </h4>
+            <p class="education__name">Computer Systems Engineer (ISC-11)</p>
+            <p class="education__GPA">GPA 94 / 100</p>
+          </div>
+          <p class="alternate__date alternate__date--right">
+            Since: 2017 - present
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="tech-skills" id="tech-skills">
+      <h2 class="heading-secondary">Technical Skills</h2>
+      <!-- First row of 4 columns -->
+      <div class="row">
+        <!-- Card javascript -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#javascript"></use>
+            </svg>
+            <h3 class="img-card__title">Javascript</h3>
+          </div>
+        </div>
+        <!-- Card python -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#python"></use>
+            </svg>
+            <h3 class="img-card__title">Python</h3>
+          </div>
+        </div>
+        <!-- Card java -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#java"></use>
+            </svg>
+            <h3 class="img-card__title">Java</h3>
+          </div>
+        </div>
+        <!-- Card SQL -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#SQL"></use>
+            </svg>
+            <h3 class="img-card__title">SQL</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second row of 4 columns -->
+      <div class="row">
+        <!-- Card github -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#github"></use>
+            </svg>
+            <h3 class="img-card__title">GitHub</h3>
+          </div>
+        </div>
+        <!-- Card Node -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#node-js"></use>
+            </svg>
+            <h3 class="img-card__title">Node.js</h3>
+          </div>
+        </div>
+        <!-- Card Express -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#express-js"></use>
+            </svg>
+            <h3 class="img-card__title">Express.js</h3>
+          </div>
+        </div>
+        <!-- Card Firebase -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#firebase"></use>
+            </svg>
+            <h3 class="img-card__title">Firebase</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third row of 4 columns -->
+      <div class="row">
+        <!-- Card HTML -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#html5"></use>
+            </svg>
+            <h3 class="img-card__title">HTML 5</h3>
+          </div>
+        </div>
+        <!-- Card css -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#css"></use>
+            </svg>
+            <h3 class="img-card__title">CSS</h3>
+          </div>
+        </div>
+        <!-- Card bootstrap -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#bootstrap"></use>
+            </svg>
+            <h3 class="img-card__title">Bootstrap</h3>
+          </div>
+        </div>
+        <!-- Card sass -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#SASS"></use>
+            </svg>
+            <h3 class="img-card__title">SASS</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth row of 4 columns -->
+      <div class="row">
+        <!-- Card React -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#react-js"></use>
+            </svg>
+            <h3 class="img-card__title">React.js</h3>
+          </div>
+        </div>
+        <!-- Card Next.js -->
+        <div class="col-1-of-4">
+          <div class="img-card">
+            <svg class="img-card__icon">
+              <use xlink:href="./img/sprite.SVG#next-js"></use>
+            </svg>
+            <h3 class="img-card__title">Next.js</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading-secondary">Projects</h2>
+      <!-- First row -->
+      <div class="row alternate__item">
+        <div class="col-1-of-2">
+          <figure class="figure">
+            <img
+              src="./img/usuma.PNG"
+              alt="Code sample project"
+              class="alternate__img"
+            />
+            <figcaption class="figure__caption">
+              <p>Visit</p>
+              <a
+                class="btn btn-blue"
+                href="https://www.usumamexico.org/"
+                target="__blank"
+                >Here!</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-1-of-2">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">USUMA</h4>
+            <p class="alternate__paragraph">
+              Usuma a non-profit organization whose main objective is to support
+              low-income mexican students to continue with their studies through
+              donations.
+            </p>
+          </div>
+          <p class="alternate__date alternate__date--right">
+            Since: June 2020 to November 2020
+          </p>
+        </div>
+      </div>
+      <!-- Second row -->
+      <div class="row alternate__item alternate__item--inverse">
+        <div class="col-1-of-2">
+          <div class="alternate__description">
+            <h4 class="alternate__subheading">Code-sampler</h4>
+            <p class="alternate__paragraph">
+              Web page that let you upload markdown
+              files and in base of those a new static page is created for each
+              md file using the technology of Next.js. This project was
+              the first prototype for the Oracle's DB tools team documentation
+              page.
+            </p>
+          </div>
+          <p class="alternate__date alternate__date--left">
+            Since: February 2021 - June 2021
+          </p>
+        </div>
+
+        <div class="col-1-of-2">
+          <figure class="figure">
+            <img
+              src="./img/code-sample.PNG"
+              alt="Code sample project"
+              class="alternate__img"
+            />
+            <figcaption class="figure__caption">
+              <p>Visit</p>
+              <a
+                class="btn btn-blue"
+                href="https://mig8447.github.io/code-sampler"
+                target="__blank"
+                >Here!</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="heading-secondary">Contact me!</h2>
+
+      <form class="row" id="contact" method="POST" action="https://formspree.io/f/xeqvkrkv">
+        <div class="contact__form">
+          <input type="text" class="form__input" name="first-name" id="first-name" placeholder="First name" required />
+          <input type="text" class="form__input" name="last-name" id="last-name" placeholder="Last name" required />
+  
+          <input
+            type="email"
+            class="form__input"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+  
+          <textarea
+          class="form__text-area"
+            name="message"
+            id="message"
+            maxlength="200"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+  
+          <p class="form__status" id="form-status" ></p>
+          <button type="submit" class="btn btn-blue">Send</button>
+        </form>
+
+        </div>
+    </section>
+  </body>
 </html>
