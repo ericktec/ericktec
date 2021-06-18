@@ -3,15 +3,25 @@
   background-color: $color-gray-dark;
   min-height: 100vh;
   width: 100%;
-  padding: 10rem;
   overflow: hidden;
 
+  
+
   &__text-container {
+    @include center;
     line-height: 1;
     color: #fff;
     font-size: 10vmin;
     width: 80%;
     margin: auto;
+    @include responsive(medium) {
+      left: 43%;
+    }
+
+    @include responsive(small) {
+      font-size: 6rem;
+    }
+
   }
 
 
@@ -35,6 +45,7 @@
       animation: left-to-right .5s 1s ease-in-out backwards;
       color: #3e60d1;
     }
+
   }
 
   &__img {
@@ -43,32 +54,67 @@
     bottom: 0%;
     right: 10%;
     animation: right-to-left .5s ease-in-out 1.5s backwards;
+
+    @include responsive(large) {
+      right: -8rem;
+    }
+
+    @include responsive(medium) {
+      right: -9rem;
+    }
+
+    @include responsive(smallest) {
+      height: 40%;
+      right: 25%;
+    }
+
+    
   }
 }
 
 .education {
   font-size: 1.6rem;
-  padding: $padding-between-sections 0;
+  padding: $padding-between-sections;
+  
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
   
   &__GPA {
-    font-size: 2rem;
+
+  }
+
+  &__name {
+    font-size: 1.8rem;
   }
 
 }
 
 .tech-skills {
   background-color: $color-gray-background;
-  padding: $padding-between-sections 0;
+  padding: $padding-between-sections;
+
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
 }
 
 .projects {
   font-size: 1.6rem;
-  padding: $padding-between-sections 0;
+  padding: $padding-between-sections;
+
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
 }
 
 .contact {
   background-color: $color-gray-background;
-  padding: $padding-between-sections 0;
+  padding: $padding-between-sections;
+
+  @include responsive($bp-medium) {
+    padding: $padding-between-sections-small;
+  }
 
   &__form {
     width: 80%;

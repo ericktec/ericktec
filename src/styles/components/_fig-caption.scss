@@ -29,6 +29,33 @@
     width: 100%;
     top: 50%;
     background-color: rgba($color-gray-dark, 0.4);
+
+    @include responsive(medium) {
+      width: 80%;
+      padding: 2rem;
+    }
+  }
+
+  @media (hover: none) {
+    &__caption {
+      color: black;
+      opacity: 1;
+      visibility: visible;
+      font-size: inherit;
+      position: static;
+      transform: none;
+    }
+
+    &:hover &__caption {
+      background-color: transparent;
+      width: auto;
+      height: auto;
+    }
+
+    &:hover img {
+      filter: none;
+    }
+
   }
   
 }

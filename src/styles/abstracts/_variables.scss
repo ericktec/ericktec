@@ -16,13 +16,28 @@ $color-gray-light-2: #919191;
 $grid-width: 114rem;
 $grid-width-small: 50rem;
 $gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
+$gutter-vertical-small: 4rem;
 $gutter-horizontal: 6rem;
+$gutter-horizontal-small: 2rem;
 
 
 //Margin variables
-$padding-between-sections: 5rem;
+$padding-between-sections: 5rem 3rem;
+$padding-between-sections-small: 3rem 2rem;
 
 //Borders
 
 $border-radius: 5px;
+
+
+//Screen sizes
+
+$bp-largest: 75em;
+
+$bp-large: 62.5em;
+
+$bp-medium: 48rem;
+
+$bp-small: 40.56em;
+
+$bp-smallest: 31em;

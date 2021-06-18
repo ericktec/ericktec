@@ -10,6 +10,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include responsive(largest) {
+    font-size: 50%;
+  }
 }
 
 body {

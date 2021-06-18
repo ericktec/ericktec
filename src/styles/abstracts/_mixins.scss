@@ -14,3 +14,23 @@
     transform: translate(-50%, -50%);
   }
 }
+
+
+@mixin responsive($size) {
+  @if $size == largest {
+    @media only screen and (max-width: $bp-largest) {@content};
+  }
+  @else if $size == large {
+    @media only screen and (max-width: $bp-large) {@content};
+  }
+  @else if $size == medium {
+    @media only screen and (max-width: $bp-medium){@content};
+  }
+  @else if $size == small {
+    @media only screen and (max-width: $bp-small){@content};
+  }
+  @else if $size == smallest {
+    @media only screen and (max-width: $bp-smallest){@content};
+  }
+  
+}
